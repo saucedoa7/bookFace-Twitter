@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+
+    IBOutlet UIButton *btnFB;
+    
+    IBOutlet UIButton *btnTwitter;
+
+}
+- (IBAction)onFBButtonPressed:(UIButton *)sender;
+
+- (IBAction)onTwitterButtonPressed:(UIButton *)sender;
 
 
 @end
