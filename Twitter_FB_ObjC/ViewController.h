@@ -6,13 +6,17 @@
 //  Copyright (c) 2014 Albert Saucedo. All rights reserved.
 //
 
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController{
 
     IBOutlet UIButton *btnFB;
-    
     IBOutlet UIButton *btnTwitter;
+
+    SLComposeViewController *faceBookPost;
+    SLComposeViewController *tweetPost;
 
 }
 - (IBAction)onFBButtonPressed:(UIButton *)sender;
